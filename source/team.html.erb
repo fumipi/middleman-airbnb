@@ -1,0 +1,12 @@
+---
+title: Le Wagon - My team
+---
+
+<ul class="list-inline text-center">
+  <% ["fumipi", "Georgewwalden7", "mattfraz38"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "avatar img-circle" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
